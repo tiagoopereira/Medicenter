@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* CABEÇALHO DO SITE */
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+nav ul, nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #727272;
+    text-transform: uppercase;
+}
+nav .active a, nav a:hover {
+    background-color: #39AAE1;
+    color: #FFF;
+}
+/* BANNER DO CORPO DO SITE */
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+.column {
+    flex-direction: column;
+}
+/* TEXTO DO BANNER */
+.banner-headline {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    color: #FFF;
+}
+.banner-headline h1 {
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner-headline h3 {
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;    
+}
+/* WIDGETS DO BANNER */
+.banner-options {
+    display: flex;
+    height: 210px;
+}
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39AAE1;
+}
+.banner2 {
+    background-color: #0079C7;
+}
+.banner3 {
+    background-color: #2B4C99;
+}
+.banner-title {
+    font-size: 22px;
+}
+.banner-desc {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-options a {
+    display: inline-block;
+    border: 1px solid #FFF;
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+.banner-options a:hover {
+    background-color: rgba(255, 255, 255, .4)
+}
+.services {
+    margin-top: 20px;
+}
+.service-schedule {
+  font-size: 14px;
+  margin: 10px 10px 0 0;
+  display: flex;
+  justify-content:flex-start;  
+}
+.service-hours {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20px;
+  border-bottom: 1px solid #fff;
+  font-size: 14px
+}
+.service-schedule::after, .service-hours::after {
+  content: '';
+  display: block;
+  margin: 11px 0;
+}
+/* PARTE GERAL DO SITE */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.title-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.title-bar {
+    width: 60px;
+    height: 3px;
+    background-color: #39AAE1;
+    margin-top: 5px;
+}
+.widget-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article .info {
+    display: flex;
+}
+article .date {
+    background-color: #2B4C99;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .comments {
+    background-color: #39AAE1;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px;
+}
+article .thumbnail {
+    margin-top: 10px;
+}
+article .thumbnail img {
+    width: 100%;
+    height: 250px;
+}
+article .news-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+}
+article .news-text {
+    font-size: 15px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+/* LATERAL */
+aside .widget-body {
+    justify-content: space-between;
+}
+aside .line1, .line2, .line3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+aside .line1 {
+    margin-bottom: 30px;
+}
+aside .line3 {
+    margin-top: 30px;
+}
+aside .block {
+    width: 150px;
+    height: 150px;
+    background-color: #39AAE1;
+}
+aside .widget-text {
+    font-size: 14px;
+    color: #5c5c5c;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDD;
+}
+aside .phone, .mail, .form {
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DDD;
+    font-size: 14px;
+    align-items: center;
+}
+aside .phone span {
+    font-weight: bold;
+    margin-left: 4px;
+}
+aside .widget-body a {
+    color: #0000CD;
+    margin-right: 4px;
+    margin-left: 4px;
+    text-decoration: none;
+}
+aside .widget-body a:hover {
+    text-decoration: underline;
+} 
+aside .widget-body img {
+    margin-right: 10px;
+}
+aside .form img {
+    margin-left: 3px;
+    margin-right: 7px;
+}
+/* RODAPÉ DO SITE */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+footer .options {
+    display: flex;
+}
+.opt1, .opt2, .opt3 {
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+.opt1 {
+    background-color: #39AAE1;
+}
+.opt2 {
+    background-color: #0079C7;
+}
+.opt3 {
+    background-color: #2B4C99;
+}
+.opt-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+footer .options a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+footer .options a:hover {
+    text-decoration: underline;
+}
+footer .details {
+    display: flex;
+}
+footer .area {
+    flex: 1;
+    color: #FFF;
+    margin-right: 20px;
+}
+footer .title-text {
+    color: #FFF;
+}
+footer .area-conteudo {
+    width: 100%;
+    color: #999;
+    font-size: 14px;
+}
+footer .area-text {
+    margin-bottom: 30px;
+}
+/* CONTEÚDO 'MEDICENTER CLINIC' DO RODAPÉ */
+footer .address {
+   width: 100%;
+}
+footer .address p {
+    margin-bottom: -15px;
+}
+footer .address span {
+    margin-left: 61px;
+}
+footer .address .different {
+    margin-left: 100px;
+}
+footer .address a {
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 50px;
+}
+/* CONTEÚDO 'LATEST POSTS' DO RODAPÉ */
+footer .post {
+    color: #FFF;
+}
+footer .post p{
+    margin-bottom: 5px;
+}
+footer .post a {
+    text-decoration: none;
+    color: #39AAE1;
+}
+footer .post a:hover {
+    text-decoration: underline;
+}
+/* CONTEÚDO 'LATEST TWEETS' DO RODAPÉ */
+footer .tweet p {
+    margin-bottom: 5px;
+}
+footer .tweet span {
+    color: #FFF;
+    margin-right: 4px;
+}
+footer .tweet a {
+    text-decoration: none;
+    color: #39AAE1;
+}
+footer .tweet a:hover {
+    text-decoration: underline;
+}
+footer .tweet .tt {
+    text-decoration: none;
+    color: #FFF;
+}
+/* COPYRIGHT */
+.footer-copy {
+    height: 40px;
+    margin-top: 30px;
+    line-height: 40px;
+    color: #FFF;
+    border-top: 1px solid #333;
+    font-size: 13px;
+}
+.footer-copy span {
+    color: #999;
+}
+/* RESPONSIVIDADE */
+@media only screen and (min-width: 876px) and (max-width: 961px) {
+    article .thumbnail img {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 876px) {
+    header {
+        height: auto;
+    }
+    header .logo{
+        padding-left: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+    header .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+    header .mm-line {
+        height: 3px;
+        background-color: #39AAE1;
+    }
+    #banner {
+        height: auto;
+    }
+    .banner-headline {
+        padding: 20px;
+    }
+    .banner-headline h1 {
+        font-size: 55px;
+    }
+    .banner-headline h3 {
+        font-size: 17px;
+    }
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+    article {
+        margin-right: 0px;
+    }
+    article .thumbnail img {
+        height: auto;
+    }
+    #geral .container {
+        flex-direction: column;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    section .widget-body {
+        flex-direction: column;
+    }
+    aside .line1, .line2, .line3 {
+        justify-content: space-around;
+    }
+    aside .widget {
+        padding: 20px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    footer .options {
+        flex-direction: column;
+    }
+    footer .details {
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer .title {
+        margin-top: 10px;
+    }
+    footer .area {
+        margin-bottom: 30px;
+    }
+    .footer-copy {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
